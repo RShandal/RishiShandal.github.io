@@ -4,56 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <title>Weather Website</title>
   </head>
   <body>
     <h1>Work in progress as of <i>08/02/2023</i></h1>
-    <p style="text-align: center">(Last updated 08/03/2023 1:40pm)</p>
+    <p id="lastUpdate">(Last updated 08/03/2023 1:40pm)</p>
 
-    <table style="width: 30%">
-      <caption>
-        Fun with tables:
-      </caption>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Address</th>
-      </tr>
-      <tr>
-        <td>Rishi</td>
-        <td>Shandal</td>
-        <td>123 NY, NY</td>
-      </tr>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>12-34 ABC, NY</td>
-      </tr>
-    </table>
+    <br /><br />
+    <p id="moneyGame">You currently have $500!</p>
+    <button type="button" onclick="changeColor()">Click here!</button>
 
-    <h2>Party requirements:</h2>
-    <ul>
-      <li>food</li>
-      <li>drinks</li>
-      <li>spoons</li>
-    </ul>
-
-    <ol>
-      <li>plate</li>
-      <li>put the food</li>
-      <li>heat the food</li>
-      <li>serve and enjoy</li>
-    </ol>
-
-    <h2>Description lists:</h2>
-    <dl>
-      <dt>Ball</dt>
-      <dd>- Round</dd>
-      <dd>- Different color</dd>
-      <dt>Bat</dt>
-      <dd>- Long in shape</dd>
-      <dd>- Wooden material</dd>
-    </dl>
+    <script>
+      function changeColor() {
+        document.getElementById("moneyGame").innerHTML =
+          "You lost $500 for clicking the button";
+        document.getElementById("moneyGame").style.backgroundColor = "red";
+      }
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
   </body>
 </html>
