@@ -1,8 +1,26 @@
 body {
-    background-color: powderblue;
+    background-color: white;
 }
 
 h1 {
     background-color: red;
     text-align: center;
+}
+
+tr, td, th {
+    border-bottom: 1px solid #ddd;
+}
+
+caption {
+    font-size: larger;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+tr:hover {
+    background-color: blueviolet;
+}
+
+ul {
+    list-style-type: disc;
 }
