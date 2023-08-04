@@ -17,3 +17,9 @@ h1 {
 #moneyGame {
     background-color: #a4c3b2;
 }
+
+footer {
+    color: #a4c3b2;
+    position: absolute;
+    bottom: 0;
+}
