@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Weather forecast website" />
+    <meta name="keywords" content="Weather, forecast" />
     <meta name="author" content="Rishi Shandal" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
@@ -15,8 +16,10 @@
     <p id="lastUpdate">(Last updated 08/04/2023 12:47am)</p>
 
     <br /><br />
-    <p id="moneyGame">You currently have $500!</p>
-    <button type="button" onclick="changeColor()">Click here!</button>
+    <p id="moneyGame">You currently have $500! &#128516;</p>
+    <button type="button" onclick="changeColor()" ; style="border-radius: 20px">
+      Click here!
+    </button>
 
     <script>
       function changeColor() {
@@ -26,6 +29,21 @@
       }
     </script>
     <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+    <br /><br /><br />
+
+    <form>
+      <label for="zipcode">Enter a zipcode:</label>
+      <input
+        type="text"
+        id="zipcode"
+        name="zipcode"
+        placeholder="Ex. 11375"
+        maxlength="5"
+        required
+      />
+      <input type="Submit" style="border-radius: 20px" />
+    </form>
 
     <footer>
       <p>Created by: Rishi Shandal</p>
