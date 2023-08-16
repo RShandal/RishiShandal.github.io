@@ -13,8 +13,10 @@
 
   <body>
     <h1>Work in progress as of <i>08/02/2023</i></h1>
-    <p id="lastUpdate">(Last updated 08/14/2023 9:21pm)</p>
+    <p id="lastUpdate">(Last updated 08/16/2023 1:23am)</p>
+    <br />
 
+    <!-- Simple game
     <br /><br />
     <p id="moneyGame">You currently have $500! &#128516;</p>
     <button type="button" onclick="changeColor()" ; style="border-radius: 20px">
@@ -31,7 +33,31 @@
     <noscript>Sorry, your browser does not support JavaScript!</noscript>
 
     <br /><br /><br />
+  -->
 
+    <!--Navigation bar-->
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <!--Zipcode search-->
+        <form>
+          <input
+            type="text"
+            id="zipcode"
+            name="zipcode"
+            placeholder="Search City or Zip Code"
+            required;
+          />
+          <button type="button" id="cityZipSearchBtn">Search</button>
+        </form>
+      </li>
+      <li style="float: right"><a href="#about">About</a></li>
+    </ul>
+    <br />
+
+    <!--Zipcode search
     <form>
       <label for="zipcode">Enter a zipcode:</label>
       <input
@@ -42,11 +68,17 @@
         maxlength="5"
         required
       />
-      <input type="Submit" style="border-radius: 20px" />
+      <button type="button" id="submit" ; style="border-radius: 20px">
+        Submit
+      </button>
     </form>
+    <br />
+    -->
 
+    <!--Footer for my information-->
     <footer>
       <p>Created by: Rishi Shandal</p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

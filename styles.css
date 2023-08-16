@@ -1,25 +1,98 @@
 /*Collor codes: #6b9080, #a4c3b2, #cce3de, #eaf4f4, #f6fff8*/
 
 body {
-    background-color: #6b9080;
+    background: linear-gradient(to bottom, #6b9080,#a4c3b2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
     color: #cce3de;
     text-align: center;
+    text-shadow: 5px 5px 7px black;
 }
 
 #lastUpdate {
     color: #eaf4f4;
     text-align: center;
+    text-shadow: 5px 5px 4px black;
 }
 
+/* 
 #moneyGame {
     background-color: #a4c3b2;
 }
+*/
+
+button:hover{
+    background-color: lightgrey;
+}
+button:active{
+    background-color: white;
+}
 
 footer {
-    color: #a4c3b2;
+    color: #f6fff8;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+}
+
+#counterHeader {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
+
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    position: -webkit-sticky; /*For Safari compatability*/
+    position: sticky;
+    top: 0;
+    background-color: #a4c3b2;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #f6fff8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #6b9080;
+}
+
+.active {
+    background-color: black;
+}
+
+.active:hover {
+    background-color: black;
+}
+
+#zipcode {
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+    padding: 3px;
+    width: 0 auto;
+
+}
+
+#cityZipSearchBtn {
+    border-radius: 50px;
 }
