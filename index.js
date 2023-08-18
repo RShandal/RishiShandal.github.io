@@ -7,6 +7,17 @@ document.getElementById("cityZipSearchBtn").onclick = function() {
     console.log(zipcode);
 }*/
 
+//Curent date and time
+updateTime();
+setInterval(updateTime, 1000);
+
+function updateTime(){
+    let date = new Date();
+    date = date.toLocaleString();
+    currentDateTime.innerHTML = `Today is:  ${date}`;
+}
+
+//Conversion of temperatures
 document.getElementById("submitButton").onclick = function() {
     
     let temp;
@@ -29,11 +40,15 @@ document.getElementById("submitButton").onclick = function() {
 
 
 }
-
 function toCelsius(temp){
     return (temp - 32) * (5/9);
 }
-
 function toFahrenheit(temp){
     return temp * 9 / 5 + 32;
 }
+
+
+
+
+//PLAY BELOW
+//

@@ -12,11 +12,12 @@ h1 {
     text-shadow: 5px 5px 7px black;
 }
 
-#lastUpdate {
+#lastUpdate, #currentDateTime {
     color: #eaf4f4;
     text-align: center;
-    text-shadow: 5px 5px 4px black;
+    text-shadow: 5px 5px 5px black;
 }
+
 
 /* 
 #moneyGame {
@@ -74,6 +75,7 @@ li a {
 
 li a:hover {
     background-color: #6b9080;
+    
 }
 
 .active {
@@ -95,4 +97,12 @@ li a:hover {
 
 #cityZipSearchBtn {
     border-radius: 50px;
+}
+
+input[type=text] {
+    background-color: #eaf4f4;
+    /*background-image: url('images/searchicon.png');
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    padding-left: 1px;*/
 }
