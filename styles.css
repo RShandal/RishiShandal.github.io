@@ -106,3 +106,38 @@ input[type=text] {
     background-repeat: no-repeat;
     padding-left: 1px;*/
 }
+
+#myDiv{
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* OtherProjects */
+#timeDisplay{
+   font-size: 40px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color:#f6fff8;
+   
+}
+.timerBtn{
+    width: 80px;
+    height: 25px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: #f6fff8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+#timeBox{
+    background-color: #6b9080;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+h2{
+    text-decoration: underline;
+}
