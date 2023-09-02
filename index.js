@@ -47,21 +47,6 @@ function toFahrenheit(temp){
     return temp * 9 / 5 + 32;
 }
 
-
-
-
-//PLAY BELOW
-//
-const element = document.getElementById("myDiv");
-element.onmousedown = doSomething;
-element.onmouseup = doSomethingElse;
-function doSomething(){
-    element.style.backgroundColor = "red";
-}
-function doSomethingElse(){
-    element.style.backgroundColor = "lightgreen";
-}
-
 /*  Simple drawing using canvas API
 let canvas = document.getElementById("myCanvas");
 let context = canvas.getContext("2d");
