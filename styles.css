@@ -107,13 +107,6 @@ input[type=text] {
     padding-left: 1px;*/
 }
 
-#myDiv{
-    background-color: lightgreen;
-    width: 100px;
-    height: 100px;
-}
-
-
 /* OtherProjects */
 #timeDisplay{
    font-size: 40px;
