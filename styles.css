@@ -18,13 +18,6 @@ h1 {
     text-shadow: 5px 5px 5px black;
 }
 
-
-/* 
-#moneyGame {
-    background-color: #a4c3b2;
-}
-*/
-
 button:hover{
     background-color: lightgrey;
 }
@@ -101,20 +94,16 @@ li a:hover {
 
 input[type=text] {
     background-color: #eaf4f4;
-    /*background-image: url('images/searchicon.png');
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
-    padding-left: 1px;*/
 }
 
-/* OtherProjects */
+/* Stopwatch */
 #timeDisplay{
    font-size: 40px;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    color:#f6fff8;
    
 }
-.timerBtn{
+.timerBtn, .choiceBtn, #restartBtn{
     width: 80px;
     height: 25px;
     border: 2px solid;
@@ -133,4 +122,48 @@ input[type=text] {
 
 h2{
     text-decoration: underline;
+}
+
+/*Rock Paper Scissors*/
+#rpsDiv{
+    background-color: #a4c3b2;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 50px;
+    padding-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#playerText{
+    color: blue;
+}
+#computerText{
+    color: red;
+}
+#gamesWon{
+    text-align: right;
+    text-decoration: underline 2px;
+    padding-right: 15px;
+}
+
+/*Tic Tac Toe*/
+#gameContainer{
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+}
+
+.grid{
+    background-color: #eaf4f4;
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+#gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
 }
