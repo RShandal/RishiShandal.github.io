@@ -25,6 +25,10 @@ button:active{
     background-color: white;
 }
 
+#submitButton, #cityZipSearchBtn{
+    cursor: pointer;
+}
+
 footer {
     color: #f6fff8;
     position: absolute;
@@ -103,7 +107,7 @@ input[type=text] {
    color:#f6fff8;
    
 }
-.timerBtn, .choiceBtn, #restartBtn{
+.timerBtn, .choiceBtn, .mobileKeys, #restartBtn, #resetSnakeGame{
     width: 80px;
     height: 25px;
     border: 2px solid;
@@ -166,4 +170,15 @@ h2{
     grid-template-columns: repeat(3, auto);
     width: 225px;
     margin: auto;
+}
+
+/*Snake Game*/
+#snakeGameContainer{
+    text-align: center;
+}
+#gameBoard{
+    border: 3px solid;
+}
+#scoreText{
+    font-size: 50px;
 }
