@@ -7,6 +7,12 @@ document.getElementById("cityZipSearchBtn").onclick = function() {
     console.log(zipcode);
 }*/
 
+//Last Updated
+const lastUpdate = document.querySelector("#lastUpdate");
+if (Date.parse(document.lastModified) != 0){
+    lastUpdate.textContent = `(Last updated:  ${document.lastModified})`;
+}
+
 //Curent date and time
 updateTime();
 setInterval(updateTime, 1000);

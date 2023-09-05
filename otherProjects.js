@@ -8,6 +8,12 @@ function updateTime(){
     currentDateTime.innerHTML = `Today is:  ${date}`;
 }*/
 
+//Last Updated
+const lastUpdate = document.querySelector("#lastUpdate");
+if (Date.parse(document.lastModified) != 0){
+    lastUpdate.textContent = `(Last updated:  ${document.lastModified})`;
+}
+
 //Stopwatch
 const timeDisplay = document.querySelector("#timeDisplay");
 const startBtn = document.querySelector("#startBtn");
@@ -231,7 +237,7 @@ let snake = [
 ];
 
 window.addEventListener("keydown", changeDirection);
-window.addEventListener("click", changeDirection); //mobile compatibility
+
 resetSnakeGame.addEventListener("click", resetGame);
 
 gameStart();
@@ -252,7 +258,7 @@ function nextTick(){
             drawSnake();
             checkGameOver();
             nextTick();
-        }, 100);
+        }, 120);
     }
     else {
         displayGameOver();
@@ -340,17 +346,16 @@ function checkGameOver(){
             break;
         case(snake[0].y >= gameHeight):
             sgRunning = false;
-            break;
-        
+            break; 
     }
     for(let i = 1; i < snake.length; i++){
         if(snake[i].x == snake[0].x && snake[i].y == snake[0].y){
-            running = false;
+            sgRunning = false;
         }
     }
 };
 function displayGameOver(){
-    ctx.font = "30px Arial";
+    ctx.font = "25px Arial";
     ctx.fillStyle = "black";
     ctx.textAlign = "center";
     ctx.fillText(`GAME OVER! Final score: ${score}`, gameWidth / 2, gameHeight / 2);
@@ -369,3 +374,4 @@ function resetGame(){
     ];
     gameStart();
 };
+

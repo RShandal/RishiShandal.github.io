@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>Work in progress as of <i>08/02/2023</i></h1>
-    <p id="lastUpdate">(Last updated 09/04/2023 3:31pm)</p>
+    <p id="lastUpdate"></p>
     <div id="currentDateTime"></div>
     <br />
 
@@ -33,7 +33,7 @@
 
     <h2>Rock, Paper, Scissors:</h2>
     <div id="rpsDiv">
-      <h3 id="gamesWon">Amount of games won:</h3>
+      <p id="gamesWon">Amount of games won:</p>
       <h3 class="gameText" id="playerText">You:</h3>
       <h3 class="gameText" id="computerText">Computer:</h3>
       <h3 class="gameText" id="resultText">Result:</h3>
@@ -62,19 +62,15 @@
     </div>
 
     <h2>Snake Game:</h2>
-    <p>
-      Use the w, a, s, and d keys to control the snake. Objective is to collect
-      the red sqaures without hitting the corners or yourself.
-      <br />(Keyboard support only; mobile coming soon!)
+    <p style="font-size: 20px">
+      Use the w, a, s, d keys to control the snake.<br />
+      <u><i>Objective:</i></u> collect the
+      <b><span style="color: red">red</span></b> sqaures without hitting the
+      corners or yourself.<br />
+      (Keyboard support only!)
     </p>
     <div id="snakeGameContainer">
-      <button id="up" class="mobileKeys">Up</button><br />
-      <div>
-        <button id="left" class="mobileKeys">Left</button>
-        <button id="down" class="mobileKeys">Down</button>
-        <button id="right" class="mobileKeys">Right</button>
-      </div>
-      <canvas id="gameBoard" width="500" height="500"></canvas>
+      <canvas id="gameBoard" width="400" height="400"></canvas>
       <div id="scoreText">0</div>
       <button id="resetSnakeGame">Reset</button>
     </div>
