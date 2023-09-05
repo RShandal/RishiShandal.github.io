@@ -355,7 +355,7 @@ function checkGameOver(){
     }
 };
 function displayGameOver(){
-    ctx.font = "25px Arial";
+    ctx.font = "20px Arial";
     ctx.fillStyle = "black";
     ctx.textAlign = "center";
     ctx.fillText(`GAME OVER! Final score: ${score}`, gameWidth / 2, gameHeight / 2);
