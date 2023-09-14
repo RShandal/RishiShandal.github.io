@@ -1,12 +1,3 @@
-// window.alert("Note: This site is currently under construction!");
-
-/*let zipcode;
-
-document.getElementById("cityZipSearchBtn").onclick = function() {
-    zipcode = document.getElementById("zipcode").value;
-    console.log(zipcode);
-}*/
-
 //Last Updated
 const lastUpdate = document.querySelector("#lastUpdate");
 if (Date.parse(document.lastModified) != 0){
@@ -23,6 +14,47 @@ function updateTime(){
     currentDateTime.innerHTML = `Today is:  ${date}`;
 }
 
+let weather = {
+    "apiKey": "c4efac29ddb8465ea2330101231409",
+    fetchWeather: function(city) {
+        fetch("https://api.weatherapi.com/v1/current.json?key=c4efac29ddb8465ea2330101231409&q="
+        + city)
+            .then((response) => response.json())
+            .then((data) => this.displayWeather(data));
+    },
+    displayWeather: function(data){
+        const { name } = data.location;
+        const { temp_f, wind_mph, humidity } = data.current;
+        const { text, icon } = data.current.condition;
+
+        document.querySelector(".city").innerHTML = `Weather in ${name}`;
+        document.querySelector(".temperature").innerHTML = `${Math.round(temp_f)}°F`;
+        document.querySelector(".icon").src = icon;
+        document.querySelector(".description").innerHTML = text;
+        document.querySelector(".humidity").innerHTML = `Humidity: ${Math.round(humidity)}%`;
+        document.querySelector(".wind").innerHTML = `Wind speed: ${Math.round(wind_mph)}mph`;
+        document.querySelector(".weather").classList.remove("loading");
+    },
+    search: function() {
+        this.fetchWeather(document.querySelector(".searchBar").value);
+    },
+};
+
+document.querySelector(".searchBar").addEventListener("click", function(){
+    weather.search();
+});
+
+document.querySelector(".searchBar").addEventListener("keyup", function(event){
+    if (event.key == "Enter") {
+        weather.search()
+    }
+});
+
+//default search
+weather.fetchWeather("New York");
+
+
+/*
 //Conversion of temperatures
 document.getElementById("submitButton").onclick = function() {
     
@@ -51,7 +83,8 @@ function toCelsius(temp){
 }
 function toFahrenheit(temp){
     return temp * 9 / 5 + 32;
-}
+}*/
+
 
 /*  Simple drawing using canvas API
 let canvas = document.getElementById("myCanvas");

@@ -7,6 +7,7 @@
     <meta name="keywords" content="Weather, forecast" />
     <meta name="author" content="Rishi Shandal" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <title>Weather Website</title>
   </head>
@@ -41,43 +42,49 @@
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li>
-        <!--Zipcode search-->
-        <form>
-          <input
-            type="text"
-            id="zipcode"
-            name="zipcode"
-            placeholder="Search City or Zip Code"
-            required;
-          />
-          <button type="button" id="cityZipSearchBtn">Search</button>
-        </form>
-      </li>
       <li style="float: right">
         <a href="otherProjects.html">Other Projects</a>
       </li>
     </ul>
     <br />
 
-    <!--Zipcode search
-    <form>
-      <label for="zipcode">Enter a zipcode:</label>
-      <input
-        type="text"
-        id="zipcode"
-        name="zipcode"
-        placeholder="Ex. 11375"
-        maxlength="5"
-        required
-      />
-      <button type="button" id="submit" ; style="border-radius: 20px">
-        Submit
-      </button>
-    </form>
-    <br />
-    -->
+    <!--Weather box-->
+    <div class="card">
+      <div class="search">
+        <input type="text" class="searchBar" />
+        <button>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 1024 1024"
+            height="1.5em"
+            width="1.5em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+            ></path>
+          </svg>
+        </button>
+        <div class="weather">
+          <div class="loading">
+            <h1 class="city">Weather in New York City</h1>
+            <div class="temperature">60°F</div>
+            <img
+              src="http://cdn.weatherapi.com/weather/64x64/day/113.png"
+              alt="Sunny skies"
+              class="icon"
+            />
+            <div class="description">Sunny</div>
+            <div class="humidity">Humidity: 50%</div>
+            <div class="wind">Wind speed: 10 mph</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!---
     <label>Temperature conversion:</label><br />
     <input type="text" id="tempBox" /><br />
 
@@ -88,11 +95,10 @@
     <label>Fahrenheit</label><br />
 
     <button type="button" id="submitButton">Submit</button><br />
-    <label id="tempLabel"></label><br />
+    <label id="tempLabel"></label><br /> -->
 
     <footer>
       <p>Created by: Rishi Shandal</p>
     </footer>
-    <script src="index.js"></script>
   </body>
 </html>

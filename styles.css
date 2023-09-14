@@ -25,10 +25,6 @@ button:active{
     background-color: white;
 }
 
-#submitButton, #cityZipSearchBtn{
-    cursor: pointer;
-}
-
 footer {
     color: #f6fff8;
     position: absolute;
@@ -83,6 +79,27 @@ li a:hover {
     background-color: black;
 }
 
+/* Weather Information*/
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+}
+.description {
+    text-transform: capitalize;
+}
+.city{
+    all: revert;
+}
+.temperature {
+    font-size: 35px;
+}
+.weather.loading {
+    visibility: hidden;
+}
+/*
 #zipcode {
     display: inline-block;
     border-radius: 50px;
@@ -90,15 +107,11 @@ li a:hover {
     padding: 3px;
     width: 0 auto;
 
-}
+}*/
 
-#cityZipSearchBtn {
-    border-radius: 50px;
-}
-
-input[type=text] {
+/*input[type=text] {
     background-color: #eaf4f4;
-}
+}*/
 
 /* Stopwatch */
 #timeDisplay{
@@ -122,6 +135,7 @@ input[type=text] {
     border: 2px solid;
     border-radius: 50px;
     padding: 20px;
+    max-width: 350px;
 }
 
 h2{
@@ -136,6 +150,7 @@ h2{
     border-radius: 50px;
     padding-bottom: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 600px;
 }
 #playerText{
     color: blue;
@@ -153,6 +168,7 @@ h2{
 #gameContainer{
     text-align: center;
     font-family: "Permanent Marker", cursive;
+    max-width: 600px;
 }
 
 .grid{
@@ -175,6 +191,7 @@ h2{
 /*Snake Game*/
 #snakeGameContainer{
     text-align: center;
+    max-width: 600px;
 }
 #gameBoard{
     border: 3px solid;
