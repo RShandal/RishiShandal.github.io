@@ -8,11 +8,11 @@ function updateTime(){
     currentDateTime.innerHTML = `Today is:  ${date}`;
 }*/
 
-//Last Updated
+/*Last Updated
 const lastUpdate = document.querySelector("#lastUpdate");
 if (Date.parse(document.lastModified) != 0){
     lastUpdate.textContent = `(Last updated:  ${document.lastModified})`;
-}
+}*/
 
 //Stopwatch
 const timeDisplay = document.querySelector("#timeDisplay");

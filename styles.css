@@ -1,48 +1,6 @@
-/*Collor codes: #6b9080, #a4c3b2, #cce3de, #eaf4f4, #f6fff8*/
+/*Color codes: #6b9080, #a4c3b2, #cce3de, #eaf4f4, #f6fff8*/
 
-body {
-    background: linear-gradient(to bottom, #6b9080,#a4c3b2);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-h1 {
-    color: #cce3de;
-    text-align: center;
-    text-shadow: 5px 5px 7px black;
-}
-
-#lastUpdate, #currentDateTime {
-    color: #eaf4f4;
-    text-align: center;
-    text-shadow: 5px 5px 5px black;
-}
-
-button:hover{
-    background-color: lightgrey;
-}
-button:active{
-    background-color: white;
-}
-
-footer {
-    color: #f6fff8;
-    position: absolute;
-    bottom: 0px;
-}
-
-#counterHeader {
-    display: block;
-    text-align: center;
-    font-size: 25px;
-}
-
-#countLabel {
-    display: block;
-    text-align: center;
-    font-size: 30px;
-}
-
+/*Navigation Bar*/
 ul {
     list-style-type: none;
     margin: 0px;
@@ -54,15 +12,12 @@ ul {
     background-color: #a4c3b2;
 }
 
-li {
-    float: left;
-}
-
 li a {
+    float: left;
     display: block;
     color: #f6fff8;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 15px;
     text-decoration: none;
 }
 
@@ -78,6 +33,58 @@ li a:hover {
 .active:hover {
     background-color: black;
 }
+
+button:hover{
+    background-color: lightgrey;
+}
+
+button:active{
+    background-color: white;
+}
+/*End navigation bar*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #6b9080,#a4c3b2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 90px;
+}
+
+.search {
+    text-align: center;
+    padding-top: 0px;
+}
+
+h1 {
+    color: #cce3de;
+    text-align: center;
+    text-shadow: 5px 5px 7px black;
+}
+
+#lastUpdate, #currentDateTime {
+    color: #eaf4f4;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+
+footer {
+    color: #f6fff8;
+    position: absolute;
+    bottom: 0px;
+}
+
 
 /* Weather Information*/
 .card {
@@ -96,9 +103,7 @@ li a:hover {
 .temperature {
     font-size: 35px;
 }
-.weather.loading {
-    visibility: hidden;
-}
+
 /*
 #zipcode {
     display: inline-block;

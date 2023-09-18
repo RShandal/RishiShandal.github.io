@@ -13,12 +13,13 @@
   </head>
 
   <body>
+    <!--
     <h1>Work in progress as of <i>08/02/2023</i></h1>
     <p id="lastUpdate"></p>
     <div id="currentDateTime"></div>
     <br />
 
-    <!-- Simple game
+    Simple game
     <br /><br />
     <p id="moneyGame">You currently have $500! &#128516;</p>
     <button type="button" onclick="changeColor()" ; style="border-radius: 20px">
@@ -40,19 +41,21 @@
     <!--Navigation bar-->
     <ul>
       <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li style="float: right">
-        <a href="otherProjects.html">Other Projects</a>
-      </li>
+      <li><a href="mailto:rishishandal97@gmail.com">Contact</a></li>
+      <li><a href="otherProjects.html">Other Projects</a></li>
     </ul>
     <br />
 
+    <div id="currentDateTime"></div>
     <!--Weather box-->
     <div class="card">
       <div class="search">
-        <input type="text" class="searchBar" />
-        <button>
+        <input
+          type="text"
+          class="searchBar"
+          placeholder="Search City or Zip Code"
+        />
+        <button onclick="weather.search()">
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -68,18 +71,16 @@
           </svg>
         </button>
         <div class="weather">
-          <div class="loading">
-            <h1 class="city">Weather in New York City</h1>
-            <div class="temperature">60°F</div>
-            <img
-              src="http://cdn.weatherapi.com/weather/64x64/day/113.png"
-              alt="Sunny skies"
-              class="icon"
-            />
-            <div class="description">Sunny</div>
-            <div class="humidity">Humidity: 50%</div>
-            <div class="wind">Wind speed: 10 mph</div>
-          </div>
+          <h1 class="city">Weather in New York, New York</h1>
+          <div class="temperature">71°F</div>
+          <img
+            src="http://cdn.weatherapi.com/weather/64x64/day/113.png"
+            alt="Sunny skies"
+            class="icon"
+          />
+          <div class="description">Sunny</div>
+          <div class="humidity">Humidity: 50%</div>
+          <div class="wind">Wind Speed: 10 mph</div>
         </div>
       </div>
     </div>

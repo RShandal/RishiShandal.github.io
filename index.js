@@ -1,8 +1,8 @@
-//Last Updated
+/*Last Updated
 const lastUpdate = document.querySelector("#lastUpdate");
 if (Date.parse(document.lastModified) != 0){
     lastUpdate.textContent = `(Last updated:  ${document.lastModified})`;
-}
+}*/
 
 //Curent date and time
 updateTime();
@@ -14,6 +14,7 @@ function updateTime(){
     currentDateTime.innerHTML = `Today is:  ${date}`;
 }
 
+//Weather API
 let weather = {
     "apiKey": "c4efac29ddb8465ea2330101231409",
     fetchWeather: function(city) {
@@ -23,26 +24,27 @@ let weather = {
             .then((data) => this.displayWeather(data));
     },
     displayWeather: function(data){
-        const { name } = data.location;
+        const { name, region } = data.location;
         const { temp_f, wind_mph, humidity } = data.current;
         const { text, icon } = data.current.condition;
 
-        document.querySelector(".city").innerHTML = `Weather in ${name}`;
+        document.querySelector(".city").innerHTML = `Weather in ${name}, ${region}`;
         document.querySelector(".temperature").innerHTML = `${Math.round(temp_f)}°F`;
         document.querySelector(".icon").src = icon;
         document.querySelector(".description").innerHTML = text;
         document.querySelector(".humidity").innerHTML = `Humidity: ${Math.round(humidity)}%`;
-        document.querySelector(".wind").innerHTML = `Wind speed: ${Math.round(wind_mph)}mph`;
-        document.querySelector(".weather").classList.remove("loading");
+        document.querySelector(".wind").innerHTML = `Wind Speed: ${Math.round(wind_mph)} mph`;
+
+        //Background image based on device size
+        const screenWidth = document.documentElement.clientWidth;
+        const screenHeight = document.documentElement.clientHeight;
+        document.body.style.backgroundImage = 
+            "url('https://source.unsplash.com/" + screenWidth + "x" + screenHeight + "/?" + name + "')";
     },
     search: function() {
         this.fetchWeather(document.querySelector(".searchBar").value);
     },
 };
-
-document.querySelector(".searchBar").addEventListener("click", function(){
-    weather.search();
-});
 
 document.querySelector(".searchBar").addEventListener("keyup", function(event){
     if (event.key == "Enter") {
@@ -54,9 +56,9 @@ document.querySelector(".searchBar").addEventListener("keyup", function(event){
 weather.fetchWeather("New York");
 
 
-/*
+
 //Conversion of temperatures
-document.getElementById("submitButton").onclick = function() {
+/* document.getElementById("submitButton").onclick = function() {
     
     let temp;
 
