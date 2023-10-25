@@ -1,1 +1,1 @@
-Contains main weather website along with other projects including stopwatch, rock paper scissors, tic-tac-toe, and slithery snake
+Contains main weather website along with other projects which include a stopwatch, rock paper scissors, tic-tac-toe, and slithery snake
