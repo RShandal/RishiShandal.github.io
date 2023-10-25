@@ -1,4 +1,4 @@
-/*Color codes: #6b9080, #a4c3b2, #cce3de, #eaf4f4, #f6fff8*/
+/*Color codes for navbar: #6b9080, #a4c3b2, #cce3de, #eaf4f4, #f6fff8*/
 
 /*Navigation Bar*/
 ul {
@@ -6,7 +6,7 @@ ul {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    position: -webkit-sticky; /*For Safari compatability*/
+    position: -webkit-sticky; /*Safari compatability*/
     position: sticky;
     top: 0;
     background-color: #a4c3b2;
@@ -73,7 +73,7 @@ h1 {
     text-shadow: 5px 5px 7px black;
 }
 
-#lastUpdate, #currentDateTime {
+#currentDateTime {
     color: #eaf4f4;
     text-align: center;
     text-shadow: 5px 5px 5px black;
@@ -86,7 +86,7 @@ footer {
 }
 
 
-/* Weather Information*/
+/*Weather Information*/
 .card {
     display: flex;
     justify-content: center;
@@ -103,20 +103,6 @@ footer {
 .temperature {
     font-size: 35px;
 }
-
-/*
-#zipcode {
-    display: inline-block;
-    border-radius: 50px;
-    text-align: center;
-    padding: 3px;
-    width: 0 auto;
-
-}*/
-
-/*input[type=text] {
-    background-color: #eaf4f4;
-}*/
 
 /* Stopwatch */
 #timeDisplay{
@@ -147,7 +133,7 @@ h2{
     text-decoration: underline;
 }
 
-/*Rock Paper Scissors*/
+/*Rock, Paper, Scissors*/
 #rpsDiv{
     background-color: #a4c3b2;
     text-align: center;
@@ -169,7 +155,7 @@ h2{
     padding-right: 35px;
 }
 
-/*Tic Tac Toe*/
+/*Tic-Tac-Toe*/
 #gameContainer{
     text-align: center;
     font-family: "Permanent Marker", cursive;
@@ -193,7 +179,7 @@ h2{
     margin: auto;
 }
 
-/*Snake Game*/
+/*Slithery Snake*/
 #snakeGameContainer{
     text-align: center;
     max-width: 600px;

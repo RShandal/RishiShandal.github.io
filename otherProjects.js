@@ -1,19 +1,3 @@
-/*Curent date and time
-updateTime();
-setInterval(updateTime, 1000);
-
-function updateTime(){
-    let date = new Date();
-    date = date.toLocaleString();
-    currentDateTime.innerHTML = `Today is:  ${date}`;
-}*/
-
-/*Last Updated
-const lastUpdate = document.querySelector("#lastUpdate");
-if (Date.parse(document.lastModified) != 0){
-    lastUpdate.textContent = `(Last updated:  ${document.lastModified})`;
-}*/
-
 //Stopwatch
 const timeDisplay = document.querySelector("#timeDisplay");
 const startBtn = document.querySelector("#startBtn");
@@ -95,7 +79,7 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
     if(resultText.textContent == "Winner!"){
         gamesWon++;
     }
-    gamesWonText.textContent = `Amount of games won: ${gamesWon}`;
+    gamesWonText.textContent = `Number of games won: ${gamesWon}`;
 }));
 
 function computerTurn(){
@@ -129,7 +113,7 @@ function checkWinner(){
     }
 }
 
-//Tic Tac Toe - Learned from Bro Code tutorial
+//Tic-Tac-Toe
 const grid = document.querySelectorAll(".grid");
 const statusText = document.querySelector("#statusText");
 const restartBtn = document.querySelector("#restartBtn");
@@ -210,7 +194,7 @@ function restartGame(){
     running = true;   
 }
 
-//Snake Game
+//Slithery Snake
 const gameBoard = document.querySelector("#gameBoard");
 const ctx = gameBoard.getContext("2d");
 const scoreText = document.querySelector("#scoreText");
@@ -374,4 +358,3 @@ function resetGame(){
     ];
     gameStart();
 };
-
